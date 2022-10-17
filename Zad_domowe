@@ -85,4 +85,4 @@ najkrótszy_bok**2+drugi_najkrótszy_bok**2 == najdłuższy_bok**2:
 else:
   if
 najkrótszy_bok**2+drugi_najkrótszy_bok**2 < najdłuższy_bok**2:
-  print("trójkąt rozwartokątny")
+  print("trójkąt rozwartokątny") 
