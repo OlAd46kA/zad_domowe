@@ -1,11 +1,13 @@
 
-print("ZADANIE 1")
-a = int(input("Podaj a : "))
-b = int(input("Podaj b : "))
-if (a + b) % 2 == 0: print("TAK, parzysta")
-else: print("NIE, nie parzysta")
+#ZADANIE 1
+a = int(input("Input a : "))
+b = int(input("Input b : "))
+if (a + b) % 2 == 0:
+    print("Yes, parzysta")
+else:
+    print("No, nie parzysta")
 
-print("ZADANIE 2")
+print("ZADANIE 2
 from math import sqrt
 a2 = float(input("Podaj a2 : "))
 b2 = float(input("Podaj b2 : "))
