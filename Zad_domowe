@@ -1,88 +1,85 @@
 #python in Ohio
-#zadanie 1
+# zad 1
 a = int(input())
 b = int(input())
-if (a+b)%2==0:
-  print("Tak")
+if (a + b) % 2 == 0:
+	print("Tak")
 else:
-  print("Nie")
-  
-#zadanie 2
+	print("Nie")
+
+# zad 2
+from math import sqrt as per
 a = int(input())
-g = int(input())
-if (a+g)/2 > math.sqrt(a*g):
-  print("Tak")
+b = int(input())
+
+if (a+b)/2 > per(a*b):
+	print("Tak")
+
 else:
-  prin("Nie")
-  
-#zadanie 3
+	print("Nie")
+
+# zad 3
 k = int(input())
 l = int(input())
 m = int(input())
-if k == l:
-  print("Dwie pierwsze liczby są równe")
+
+if k == l == m:
+	print("every number is equal, don't pass")
+elif k == l:
+	print("2 first numbers are equal about " + str(k))
+elif k == m:
+	print("first and last numbers are equal about " + str(k))
+elif l == m:
+	print("2 last numbers are equal about " + str(l))
 else:
-  print("pierwsza i ostatnia liczby są równa")
-else:
-  print("Dwie ostatnie liczby są równe")
-else:
-  print("Żadna liczba nienjest sobie równa")
-  
-#zadanie 4
+	print("none of numbers are equal")
+
+
+# zad 4
+a = int (input())
+b = int (input())
+c = int (input())
+d = int (input())
+
+nums = (a, b, c, d)
+res = max(nums)
+print("Największa liczna jest " + str(res))
+
+
+# zad 5
 a = int(input())
 b = int(input())
 c = int(input())
-d = int(input())
-najmniejsza = a
-if b < najmniejsza:
-  najmniejsza = b
-if c < najmniejsza:
-  najmniejsza = c
-if d < najmniejsza:
-  najmniejsza = d
-print(najmniejsza)
-  
-#zadanie 5
+
+res1 = (a < b + c)
+res2 = (b < a + c)
+res3 = (c < a + b)
+
+if res1 and res2 and res3:
+	print("Spełnia nierówność")
+else:
+	print("Nie spełnia nierówność")
+
+# zad 6
+import math
+
 a = int(input())
 b = int(input())
 c = int(input())
-if a > b+c:
-  print("Nie")
+
+def ToDegrees(a, b, c):
+	return math.acos((b * b + c * c - a * a) / (2 * b * c)) * 180 / math.pi;
+
+resa = ToDegrees(a, b, c)
+resb = ToDegrees(c, a, b)
+resy = ToDegrees(c, b, a)
+
+degrees = (resa, resb, resy)
+print(degrees)
+res = max(degrees)
+if res == 90:
+	print("Prostokątny")
+elif res < 90:
+	print("Ostrokątny")
 else:
-  if b > a+c:
-    print("Nie")
-  else:
-    if c > a+b:
-      print("Nie")
-    else:
-      print("Tak")
-        
-#zadanie 6
-a = int(input())
-b = int(input())
-c = int(input())
-if c > a and c > b:
-  najkrótszy_bok = a
-  drugi_najkrótszy_bok = b
-  najdłuższy_bok = c
-else:
-  if b > a and b > c:
-    najkrótszy_bok = a
-    drugi_najkrótszy_bok = c
-    najdłuższy_bok = b
-  else:
-    if a > b and a > c:
-      najkrótszy_bok = b
-      drugi_najkrótszy_bok = c
-      najdłuższy_bok = a
-if 
-najkrótszy_bok**2+drugi_najkrótszy_bok**2 > najdłuższy_bok**2:
-  print("trójkąt ostrokątny")
-else:
-  if
-najkrótszy_bok**2+drugi_najkrótszy_bok**2 == najdłuższy_bok**2:
-  print("trójkąt prostokątny")
-else:
-  if
-najkrótszy_bok**2+drugi_najkrótszy_bok**2 < najdłuższy_bok**2:
-  print("trójkąt rozwartokątny") 
+	print("Rozwartokątny")
