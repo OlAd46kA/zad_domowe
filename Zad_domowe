@@ -42,8 +42,9 @@ c = int (input())
 d = int (input())
 
 nums = (a, b, c, d)
-res = max(nums)
-print("Największa liczna jest " + str(res))
+res = min
+(nums)
+print("Najmniejsza liczba jest " + str(res))
 
 
 # zad 5
